@@ -1,0 +1,8 @@
+<meta name="description" content="The Description"> <!-- ˜150 chars -->
+  <meta property="og:title" content="The Title">
+  <meta property="og:description" content="The Description"> <!-- ˜300 chars -->
+  <meta property="og:site_name" content="Sfida Blog">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.sfidastudios.com">
+  <meta property="og:image" content="http://www.sfidastudios.com/logo.png"> <!-- 200x200px - 1200x1200px -->
