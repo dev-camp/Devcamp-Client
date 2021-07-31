@@ -172,6 +172,7 @@ body{
     padding:10px;
     height:50px;
     border-radius: 5px;
+    color:#fff;
 }
 .section .create-space .cont .form .space-btn{
     background: var(--yellow-light);
