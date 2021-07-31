@@ -1,0 +1,252 @@
+/* mobile */
+/* Small devices (landscape phones, 576px and up) */
+@media(min-width: 300px){
+    /* navbar */
+    .nav .logo-cont .logo{
+        width:100px !important;
+    }
+    .nav .action .signup{
+       display: none !important;
+    }
+
+    /* header */
+    .header .ovl .content .txt{
+        width: 90% !important;
+        padding:12px !important;
+    }
+    .header .ovl .content .txt h1{
+        font-size: 40px !important;
+    }
+    .header .ovl #particles-cont{
+        width:100% !important;
+        height:80% !important;
+    }
+    .header .ovl .content img{
+        width:50% !important;
+    }
+
+    /* creative space */
+    .section .create-space .cont{
+        width:90% !important;
+        background:none !important;
+        box-shadow: none !important;
+        border-radius: 0px !important;
+        position: absolute !important;
+        top:-95px !important;
+        height: 120px !important;
+    }
+    .section .create-space {
+        top:50px !important;
+    }
+    .section .create-space .cont .form{
+        width: 100%;
+    }
+    .section .create-space .cont .form .space-inp{
+        width:100% !important;
+        background: var(--dark-md) !important;
+        padding: 15px !important;
+    }
+    .section .create-space .cont .form .space-btn{
+        width: 100% !important;
+        border-radius: 10px !important;
+        padding:12px !important;
+    }
+    /* intro block */
+    .section .intro-block .cont{
+        flex-wrap: wrap !important;
+    }
+    .section .intro-block .cont img{
+        width: 100% !important;
+    }
+    .section .intro-block .cont .txt-cont{
+        width: 100% !important;
+        position: relative !important;
+        top:50px !important;
+    }
+
+    /* services cont */
+    .section .services-cont{
+        position: relative !important;
+        top:50px !important;
+    }
+    .section .services-cont .cont{
+        height:55rem !important;
+    }
+    /* explore dev content */
+    .section .explore-cont{
+        top:80px !important;
+    }
+    .section .explore-cont .cont .head{
+        padding: 12px !important;
+    }
+    .section .explore-cont .cont .head .input-cont .search-inp{
+        width: 380px !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)  */
+@media(min-width: 768px){
+    .header{
+        width:100% !important;
+        height:100vh !important;
+    }
+    .header .ovl{
+        padding: 40px !important;
+    }
+    .header .ovl .content .txt{
+        width: 100% !important;
+        color:#fff !important;
+    }
+    .header .ovl .content .txt h1{
+        font-size: 70px !important;
+    }
+    .header .ovl .content .txt p{
+        width: 400px !important;
+    }
+    .header .ovl .content img{
+        width:60% !important;
+    }
+
+    /* services cont */
+    .section .services-cont .cont .boxes .box {
+        width:450px !important;
+    }
+    .section .services-cont .cont .boxes{
+        margin:10px auto !important;
+    }
+
+    /* create-space cont */
+    .section .create-space .cont{
+        width:100% !important;
+        display: flex !important;
+        margin:10px auto !important;
+    }
+    .section .create-space .cont .form .space-inp{
+        width:65% !important;
+        background: var(--dark-md) !important;
+        height:80% !important;
+        padding: 10px !important;
+    }
+    .section .create-space .cont .form .space-btn{
+        width:200px !important;
+    }
+    .section .intro-block .cont img{
+        width: 50% !important;
+    }
+    .section .intro-block .cont .txt-cont{
+        top:40px !important;
+        position: relative !important;
+        width: 80% !important;
+    }
+
+    /* services cont */
+    .section .services-cont{
+        top:50px !important;
+        height:450px !important;
+    }
+    .section .services-cont .cont .boxes .box {
+        width:225px !important;
+        height:200px !important;
+        padding: 12px !important;
+    }
+
+    /* explore dev content */
+    .section .explore-cont{
+        top:80px !important;
+    }
+    .section .explore-cont .cont .head p{
+        width:400px !important;
+    }
+    .section .explore-cont .cont .head .input-cont .search-inp{
+        width: 450px !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media(min-width: 992px){
+    .header .ovl .content{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .header .ovl .content img{
+        width:35% !important;
+        margin: 50px;
+    }
+    /* section */
+    .section .intro-block .cont img{
+        width: 60% !important;
+    }
+    .section .intro-block .cont{
+        position: relative !important;
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+    }
+    .section .intro-block .cont .txt-cont{
+        width:40% !important;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media(min-width: 1200px){
+    .section .create-space .cont{
+        width:100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        left: 200px !important;
+    }
+    .section .create-space {
+        width: 100%;
+        top:50px !important;
+    }
+    .section .create-space .cont .form{
+        width: 70%;
+        display: flex !important;
+        align-items: center !important;
+        background: var(--dark-light) !important;
+        padding: 12px !important;
+        border-radius: 10px !important;
+    }
+    .section .create-space .cont .form .space-inp{
+        width:75% !important;
+        background: var(--dark-md) !important;
+        padding: 15px !important;
+    }
+    .section .create-space .cont .form .space-btn{
+        width: 20% !important;
+        border-radius: 10px !important;
+        padding:10px !important;
+    }
+    .header .ovl .content{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .header .ovl .content img{
+        width:35% !important;
+        margin: 50px !important;
+    }
+    /* section */
+    .section .intro-block .cont img{
+        width: 60% !important;
+    }
+    .section .intro-block .cont{
+        position: relative !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media(min-width: 1400px){
+    body{
+        background: gold !important;
+    }
+}

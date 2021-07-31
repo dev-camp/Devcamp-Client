@@ -1,3 +1,4 @@
+@import url("responsive.css");
 @import url("colors.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 /* fonts */
@@ -168,7 +169,7 @@ body{
     background: var(--dark-bg);
     border: none;
     outline: none;
-    padding:12px;
+    padding:10px;
     height:50px;
     border-radius: 5px;
 }
@@ -251,29 +252,29 @@ body{
 /* explore dev content */
 .section .explore-cont{
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: relative;
     top:50px;
 }
-.section .explore-cont .cont .head{
+.section .explore-cont .head{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color:#fff;
 }
-.section .explore-cont .cont .head h1{
+.section .explore-cont .head h1{
     font-weight: 600;
 }
 
-.section .explore-cont .cont .head p{
+.section .explore-cont .head p{
     text-align: center;
     color:var(--dark-grey);
 }
-.section .explore-cont .cont .head .input-cont{
+.section .explore-cont .head .input-cont{
     width:100%;
 }
-.section .explore-cont .cont .head .input-cont .search-inp{
+.section .explore-cont .head .input-cont .search-inp{
     width: 400px;
     margin: 10px auto;
     padding: 12px;
@@ -282,17 +283,33 @@ body{
     border-radius: 30px;
 }
 
-.section .explore-cont .cont .body-cont{
+.section .explore-cont{
     width:100%;
+    height:auto;
     position: relative;
-    top:40px;
+    top:0px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.section .explore-cont .cont .body-cont .tags{
+.section .explore-cont .tag-arrow{
+    font-size: 25px;
+    color:#fff;
+    animation: move 1s linear infinite;
+    position: relative;
+}
+@keyframes move{
+    0%{
+        left:0px;
+    }
+    100%{
+        left:40px;
+    }
+}
+.section .explore-cont .tags{
     width: 80%;
+    height:10vh;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(12, 1fr);
@@ -300,11 +317,7 @@ body{
     white-space: nowrap;
     overflow-y:hidden;
 }
-.section .explore-cont .cont .body-cont .tags::-webkit-scrollbar{
-    display: none;
-    justify-content: center;
-}
-.section .explore-cont .cont .body-cont .tags .btn-tags{
+.section .explore-cont .tags .btn-tags{
     background: var(--dark-light);
     margin:10px auto;
     border-radius:30px ;
@@ -312,27 +325,37 @@ body{
     display: flex;
     margin: 10px;
 }
-.section .explore-cont .cont .body-cont .tags .btn-tags.active{
+.section .explore-cont .tags .btn-tags.active{
     background: var(--yellow-light);
     color:var(--dark-md);
 }
 
+.section .explore-cont .tags::-webkit-scrollbar{
+    display: none;
+}
+
 /* main-body */
-.section .body-cont .main-body{
-    width:90%;
-    height:90vh;
+.section .main-body{
+    width:80%;
+    height:auto;
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    overflow-x: auto;
+    grid-template-columns: repeat(6, 1fr);
+    overflow-x: scroll;
     white-space: nowrap;
     margin: 20px;
     position: relative;
-    top:50px;
+    top:0px;
 }
-.section .body-cont .main-body::-webkit-scrollbar{
+.section .main-body::-webkit-scrollbar{
     display: none;
 }
-.section .body-cont .main-body .box{
+.section .main-body::after{
+    content: "";
+    position: relative;
+    right:0px;
+    width:30px;
+}
+.section .main-body .box{
     width: 300px;
     height:380px;
     background: var(--dark-light);
@@ -340,12 +363,14 @@ body{
     overflow:hidden;
     position: relative;
     margin:12px;
+    transition: .2s ease-in-out;
 }
-.section .body-cont .main-body .box:hover{
+
+.section .main-body .box:hover{
     transform: skew(10deg, -10deg);
     cursor: pointer;
 }
-.section .body-cont .main-body .box .header-img{
+.section .main-body .box .header-img{
     width:100%;
     height:150px;
     background: url("../images/headers/bg.jpg");
@@ -355,7 +380,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.section .body-cont .main-body .box .header-img .profile-img{
+.section .main-body .box .header-img .profile-img{
     width:100px;
     height:100px;
     border-radius: 50%;
@@ -363,7 +388,7 @@ body{
     top:100px;
     border: 4px solid var(--yellow-light);
 }
-.section .body-cont .main-body .box .content{
+.section .main-body .box .content{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -374,12 +399,12 @@ body{
     color:#ccc;
     text-align: center;
 }
-.section .body-cont .main-body .box .content .rating{
+.section .main-body .box .content .rating{
     padding:8px 15px;
     background: var(--dark-bg);
     border-radius: 5px;
 }
-.section .body-cont .main-body .box .content .icon{
+.section .main-body .box .content .icon{
     color:var(--yellow-light);
 }
 
@@ -387,184 +412,14 @@ body{
 /* footer */
 .section .footer{
     width: 100%;
-    height:20vh;
-    padding:12px;
+    height:auto;
+    padding:15px;
     background: var(--dark-md);
     display: flex;
     align-items: center;
     justify-content: center;
     color:#fff;
     text-align: center;
+    position: relative;
+    top:30px;
 }
-
-
-
-
-/* responsive */
-
-/* X-Small devices (portrait phones, less than 576px) */
-
-@media only screen 
-  and (min-width: 400px) 
-  and (max-width: 568px) { 
-      /* navbar */
-    .nav .logo-cont .logo{
-        width:100px;
-    }
-    .nav .action .signup{
-       display: none;
-    }
-
-    /* header */
-    .header .ovl .content .txt{
-        width: 100%;
-        padding:12px;
-    }
-    .header .ovl #particles-cont{
-        width:100%;
-        height:50%;
-    }
-    .header .ovl .content img{
-        width:50%;
-    }
-
-    /* creative space */
-    .section .create-space .cont{
-        width:100%;
-        background:none;
-        box-shadow: none;
-        border-radius: 0px;
-        position: absolute;
-        top:-95px;
-        height: 120px;
-    }
-    .section .create-space {
-        top:50px;
-    }
-    .section .create-space .cont .form .space-inp{
-        width:450px;
-        background: var(--dark-md);
-    }
-    .section .create-space .cont .form .space-btn{
-        width: 100%;
-        border-radius: 10px;
-        padding:15px;
-    }
-    /* intro block */
-    .section .intro-block .cont{
-        flex-wrap: wrap;
-    }
-    .section .intro-block .cont img{
-        width: 100%;
-    }
-    .section .intro-block .cont .txt-cont{
-        width: 100%;
-        position: relative;
-        top:50px;
-    }
-
-    /* services cont */
-    .section .services-cont{
-        position: relative;
-        top:50px;
-    }
-    .section .services-cont .cont{
-        height:55rem;
-    }
-    /* explore dev content */
-    .section .explore-cont{
-        top:80px;
-    }
-    .section .explore-cont .cont .head{
-        padding: 12px;
-    }
-    .section .explore-cont .cont .head .input-cont .search-inp{
-        width: 380px;
-    }
-}
-
-
-/* Small devices (landscape phones, less than 768px) */
-/* @media (max-width: 767.98px) {
-    body{
-        background: green;
-    }
-} */
-
-/* Medium devices (tablets, less than 992px) */
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    /* header */
-    .header{
-        width:100%;
-        height:100vh;
-    }
-    .header .ovl{
-        padding: 40px;
-    }
-    .header .ovl .content .txt{
-        width: 100%;
-        color:#fff;
-    }
-    .header .ovl .content .txt h1{
-        font-size: 70px;
-    }
-    .header .ovl .content .txt p{
-        width: 400px;
-    }
-    .header .ovl .content img{
-        width:50%;
-    }
-
-    /* create-space cont */
-    .section .create-space .cont{
-        width:90%;
-    }
-    .section .intro-block .cont img{
-        width: 100%;
-    }
-    .section .intro-block .cont .txt-cont{
-        top:40px;
-        position: relative;
-        width: 80%;
-    }
-
-    /* services cont */
-    .section .services-cont{
-        top:50px;
-    }
-    .section .services-cont .cont .boxes .box {
-        width:225px;
-        height:200px;
-        padding: 12px;
-    }
-
-    /* explore dev content */
-    .section .explore-cont{
-        top:80px;
-    }
-    .section .explore-cont .cont .head p{
-        width:400px;
-    }
-    .section .explore-cont .cont .head .input-cont .search-inp{
-        width: 450px;
-    }
-}
-
-
-/* Large devices (desktops, less than 1200px) */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) { 
-    body{
-        /* background: cyan; */
-    }
-}
-
-
-
-
-
-
-
-
-
