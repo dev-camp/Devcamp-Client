@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devcamp | Signup</title>
+    <!-- Meta og tags -->
+    <meta name="description" content="The Description"> <!-- ˜150 chars -->
+    <meta property="og:title" content="Devcamp Signup">
+    <meta property="og:description" content="Connecting developers around the world"> <!-- ˜300 chars -->
+    <meta property="og:site_name" content="Devcamp">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="./assets/images/logo/tab.jpeg">
+    <!-- link rel -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/auth.css">
+    <!-- tab icon -->
+    <link rel="shortcut icon" href="./assets/images/logo/tab.jpeg" type="image/x-icon">
+
+    <!-- AOS LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="nav">
+        <div class="container-fluid">
+            <div class="logo-cont">
+                <a href="/" class="navbar-brand">
+                    <img src="./assets/images/logo/logo.png" alt="" class="logo img-fluid">
+                </a>
+            </div>
+
+            <!-- login/signupbtn -->
+            <div class="action">
+                <a href="" class="deco btn login-btn">Login</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- section -->
+    <section class="section">
+        <div class="container-fluid">
+            <div class="signup-cont">
+                <div class="head">
+                    <h4>Sign Up</h4>
+                    <br>
+                    <div class="oauth-cont">
+                        <a href="">
+                            <img src="./assets/images/icons/gog.png" class="img-fluid"/>
+                        </a>
+                        <a href="">
+                            <img src="./assets/images/icons/git.png" class="img-fluid"/>
+                        </a>
+                    </div>
+                    <br>
+                    <p>Or signup with email</p> 
+                </div>
+                <div class="form-cont">
+                    <form class="form-group">
+                        <div class="inp-cont">
+                            <input type="text" placeholder="Email" autofocus class="inp p-3 mt-3">
+
+                            <input type="password" placeholder="Password" class="inp p-3 mt-3">
+    
+                            <!-- this would be seen after user has entered their details -->
+                            <input type="number" placeholder="Verification code" class="inp p-3 mt-3">
+    
+                        </div>
+                        <br>
+                        <p class="mt-2 text-white">Please check your inbox for verification code</p>
+                        
+                        <br>
+                        <div class="btn-cont">
+                            <button class="btn btn-block btn-submit">
+                                Continue with Email
+                            </button>
+                        </div>
+                    </form> 
+                </div>
+                <small class="text-white">By signing up you agree to our terms and privacy policy</small>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
