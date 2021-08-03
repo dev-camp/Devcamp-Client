@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devcamp | Login</title>
+    <!-- Meta og tags -->
+    <meta name="description" content="The Description"> <!-- ˜150 chars -->
+    <meta property="og:title" content="Devcamp Signup">
+    <meta property="og:description" content="Connecting developers around the world"> <!-- ˜300 chars -->
+    <meta property="og:site_name" content="Devcamp">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="./assets/images/logo/tab.jpeg">
+    <!-- link rel -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/explore.css">
+    <!-- tab icon -->
+    <link rel="shortcut icon" href="./assets/images/logo/tab.jpeg" type="image/x-icon">
+
+    <!-- AOS LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+    <!-- navbar -->
+    <nav class="nav">
+        <div class="container-fluid">
+            <div class="logo-cont">
+                <a href="/" class="navbar-brand">
+                    <img src="./assets/images/logo/logo.png" alt="" class="logo img-fluid">
+                </a>
+            </div>
+
+            <!-- login/signupbtn -->
+            <div class="action">
+                <!-- dashboard button would be visible after user authentication -->
+                <a href="" class="btn dashboard-btn">Dashboard</a>
+                <a href="login.html" class="deco btn login-btn">login</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="section">
+        <div class="explore-cont">
+            <div class="head">
+                <div class="container">
+                    <h1>Explore Developers</h1>
+                    <br>
+                    <p>Discover the best developers, creators around the world and get inspired by their works.</p>
+
+                    <div class="form-cont">
+                        <form class="form-group">
+                            <input type="text" placeholder="Search Developers/Creators" class="form-control">
+                        </form>
+                    </div>
+                    <br>
+                    <div class="tags-cont">
+                        <button class="btn btn-tag active">#Andriod Developer</button>
+                        <button class="btn btn-tag">#ML Expert</button>
+                        <button class="btn btn-tag">#Fullstack Developer</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <!-- Developers cards -->
+            <div class="container">
+                <div class="cards-cont">
+                    <div class="cards" data-aos="fade-up">
+                      <div class="img-cont">
+                          <img src="./assets/images/avatars/a.png" alt="users image">
+                      </div>  
+                      <div class="users-info">
+                          <span class="u-name">Ryan Delf</span>
+                          <span class="u-skill">Frontend Developer</span>
+
+                          <br>
+                          <div class="remarks">
+                              <button class="btn follower-btn">
+                                  <small><b>100</b> followers</small>
+                              </button>
+                              <div class="likes">
+                                  <span><b>200</b> <ion-icon name="star" class="icon"></ion-icon></span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="cards" data-aos="fade-up">
+                        <div class="img-cont">
+                            <img src="./assets/images/avatars/a.png" alt="users image">
+                        </div>  
+                        <div class="users-info">
+                            <span class="u-name">Ryan Delf</span>
+                            <span class="u-skill">Frontend Developer</span>
+  
+                            <br>
+                            <div class="remarks">
+                                <button class="btn follower-btn">
+                                    <small><b>100</b> followers</small>
+                                </button>
+                                <div class="likes">
+                                    <span><b>200</b> <ion-icon name="star" class="icon"></ion-icon></span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+                <br>
+                <p>All Right Reserved</p>
+                <p class="deco">Devcamp 2021</p>
+                <p>Copyright &copy; @ 2021</p>
+        </footer>
+    </section>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+    </script>
+</body>
+</html>

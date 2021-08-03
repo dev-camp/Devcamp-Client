@@ -1,0 +1,214 @@
+@import url("responsive.css");
+@import url("colors.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+/* fonts */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Light.ttf") format("truetype"),
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+/* body */
+body{
+    width:100%;
+    height:100vh;
+    padding:0px;
+    margin:0px;
+    background:var(--dark-bg);
+    font-family: "Poppins", sans-serif !important;
+    overflow-x: hidden;
+}
+
+.deco{
+    color: var(--yellow-light);
+}
+
+/* navbar */
+.nav{
+    width: 100%;
+    height: 20vh;
+    padding:10px;
+    position: relative;
+}
+.nav .logo-cont{
+    position: absolute;
+    top:5px;
+    left:20px;
+}
+.nav .logo-cont .logo{
+    width:150px;
+}
+
+.nav .action{
+    position:absolute;
+    right:20px;
+    padding:15px;
+    font-weight: 500;
+}
+.nav .action .dashboard-btn{
+    background: var(--yellow-light);
+    padding: 10px 15px;
+    font-weight: 600;
+}
+.nav .action a{
+    padding:5px;
+}
+.nav .action a:hover{
+    color:var(--yellow-light);
+    border-bottom: 2px solid var(--yellow-light);
+}
+
+.section{
+    width:100%;
+    height:100vh;
+    position:relative;
+    left:0px;
+    margin:0px;
+    padding:0px;
+}
+
+.section .explore-cont{
+
+}
+
+.section .explore-cont .head{
+    width:70%;
+    height:auto;
+    position:relative;
+    margin: 20px auto;
+    text-align:center;
+    color:#fff;
+}
+.section .explore-cont .head h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.section .explore-cont .form-cont{
+    position: relative;
+    top:50px;
+}
+.section .explore-cont .form-cont form .form-control{
+    background: var(--dark-light);
+    border: none;
+    outline: none;
+    padding:12px 15px;
+    border-radius: 30px;
+    color:#ccc;
+}
+.section .explore-cont .form-cont form .form-control:focus{
+    outline:var(--dark-light);
+    border:var(--dark);
+}
+
+
+/* tags-container */
+.section .explore-cont .tags-cont{
+    width: 100%;
+    height:auto;
+    padding:20px;
+    margin:10px auto;
+    position: relative;
+    top:30px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.section .explore-cont .tags-cont .btn{
+    margin:10px;
+}
+.section .explore-cont .tags-cont .btn-tag{
+    background: var(--dark-light);
+    border-radius: 30px;
+    color:#ccc;
+}
+.section .explore-cont .tags-cont .btn-tag.active{
+    background: var(--yellow-light);
+    color:var(--dark);
+}
+
+.section .explore-cont .cards-cont{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.section .explore-cont .cards-cont .cards{
+    width:70%;
+    display: flex;
+    align-items: start;
+    background: var(--dark-light);
+    margin:20px auto;
+    padding:20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 3px var(--dark-bg);
+    color:#ccc;
+}
+
+@media(min-width:400px) and (max-width:700px){
+    .section .explore-cont .cards-cont .cards{
+        width:100%;
+    }
+}
+.section .explore-cont .cards-cont .cards .img-cont{
+    width:200px;
+}
+.section .explore-cont .cards-cont .cards .img-cont img{
+    width: 50%;
+    border-radius: 50%;
+    border: 3px solid var(--yellow-light);
+}
+.section .explore-cont .cards-cont .cards .users-info .u-name{
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.section .explore-cont .cards-cont .cards .users-info .remarks{
+    display: flex;
+    align-items: center;
+    padding:12px;
+    margin-top:20px;
+    flex-wrap: wrap;
+}
+
+.section .explore-cont .cards-cont .cards .users-info .remarks .btn{
+    padding:4px 15px;
+    border-radius: 30px;
+}
+
+.section .explore-cont .cards-cont .cards .users-info .remarks .follower-btn{
+    margin-right: 15px;
+    background: var(--yellow-light);
+    margin-top:5px;
+}
+.section .explore-cont .cards-cont .cards .users-info .remarks .likes{
+    background: var(--dark-bg);
+    padding: 3px 15px;
+    border-radius: 30px;
+    margin-top:5px;
+}
+.section .explore-cont .cards-cont .cards .users-info .remarks .likes .icon{
+    font-size:20px;
+    color:var(--yellow-light);
+}
+
+
+/* footer */
+.section .footer{
+    width:100%;
+    height:30vh;
+    background: var(--dark-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#ccc;
+}
+
