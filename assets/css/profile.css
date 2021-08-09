@@ -1,0 +1,312 @@
+@import url("colors.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+/* fonts */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Light.ttf") format("truetype"),
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* body */
+body{
+    width:100%;
+    height:100vh;
+    padding:0px;
+    margin:0px;
+    /* background:var(--dark-bg); */
+    background: var(--dark-light); 
+    font-family: "Poppins", sans-serif !important;
+    overflow-x: hidden;
+}
+
+.deco{
+    color: var(--yellow-light);
+}
+
+.nav{
+    width:100%;
+    height:12vh;
+    padding: 0px;
+    position: relative;
+    top:0px;
+    left:0px;
+    background: var(--dark-md); 
+}
+.nav .logo-cont img{
+    width:100px;
+}
+.nav .user-nav-cont{
+    position: absolute;
+    top:10px;
+    right:10px;
+    width:120px;
+}
+.nav .user-nav-cont .img-cont{
+    width:55%;
+}
+
+.nav .user-nav-cont .img-cont img{
+    width:70%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav .user-nav-cont .img-cont img:hover{
+    transition: .1s;
+    transform: scale(.9);
+}
+
+.nav .user-nav-cont .user-nav{
+    position: absolute;
+    right:0px;
+    top:50px;
+    padding:0px;
+    background:var(--dark-light);
+    border-radius: 5px;
+    width:200px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color:#ccc;
+    display: none;
+}
+.nav .user-nav-cont .user-nav .list{
+    padding:0px;
+}
+.nav .user-nav-cont .user-nav .list li{
+    line-height: 20px;
+    padding:15px;
+    margin:5px auto;
+    transition: .1s;
+    color: #ccc;
+}
+.nav .user-nav-cont .user-nav .list li a{
+    color: #ccc;
+}
+.nav .user-nav-cont .user-nav .list li:hover{
+    background: var(--dark-bg);
+}   
+
+.nav .user-nav-cont .user-nav .list li .icon{
+    color: var(--yellow-light);
+}
+
+
+/* header */
+.header{
+    padding: 0px;
+    width:100vw;
+    height:50vh;
+    overflow: hidden;
+    background-image: url("../images/headers/profile-bg.png");
+    background-size:cover;
+    background-position: center;
+    position: relative;
+}
+
+.header .ovl{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,.5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#cccc;
+    text-align: center;
+}
+
+
+/* section */
+.profile-section{
+    width:100%;
+    height:100vh;
+    position: relative;
+    top:0px;
+    left:0px;
+}
+
+.profile-section .main-cont{
+    width:90%;
+    margin:0px auto;
+    position: relative;
+    top:0px;
+    left:0px;
+}
+.profile-section .main-cont .layout{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    grid-template-areas: "user-card main-cont";
+    position: relative;
+    grid-gap: 20px;
+}
+
+/* User card container */
+.profile-section .main-cont .layout .user-card-cont{
+    width: 300px;
+    background: var(--dark-bg);
+    position:relative;
+    top:-50px;
+    height:450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:5px;
+    float: left;
+    grid-area: user-card;
+}
+.profile-section .main-cont .layout .user-card-cont .user-info{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px;
+    color:#ccc;
+}
+
+/* More container */
+.profile-section .main-cont .layout .user-card-cont .profile-more-cont{
+    position: absolute;
+    top:70px;
+    right:-10px;
+    background: var(--transparent-dark);
+    padding:10px 12px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #000;
+    display: none;
+}
+.profile-section .main-cont .layout .user-card-cont .profile-more-cont .btn{
+    background: var(--dark-light);
+    color: #ccc;
+}
+
+/* More container icon-button */
+
+.profile-section .main-cont .layout .user-card-cont .more ion-icon{
+    position: absolute;
+    top:20px;
+    right:30px;
+    padding: 12px;
+    background: var(--dark-light);
+    border-radius: 50%;
+    color:#ccc;
+    cursor: pointer;
+}
+.profile-section .main-cont .layout .user-card-cont .more ion-icon:hover{
+    transform: scale(1.1);
+}
+.profile-section .main-cont .layout .user-card-cont .user-info img{
+    width:100px;
+    border-radius: 50%;
+    border: 4px solid var(--yellow-light);
+}
+
+.profile-section .main-cont .layout .user-card-cont .user-info .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile-section .main-cont .layout .user-card-cont .user-info .links a{
+    padding:5px;
+    color: var(--yellow-light);
+}
+
+.profile-section .main-cont .layout .user-card-cont .user-info .user-action{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-section .main-cont .layout .user-card-cont .user-info .user-action .btn{
+    color:#ccc;
+    background: var(--dark-bg);
+    border: none;
+    outline: none;
+    border: 2px solid var(--yellow-light);
+    border-radius: 30px;
+    position: relative;
+    text-align: end;
+    margin:5px;
+    font-size: 15px;
+}
+.profile-section .main-cont .layout .user-card-cont .user-info .user-action .btn.follow-btn{
+    background: var(--yellow-light);
+    color:var(--dark);
+    font-weight: 600;
+}
+.profile-section .main-cont .layout .user-card-cont .user-info .user-action .btn .icon{
+    /* padding:12px; */
+}
+.profile-section .main-cont .layout .user-card-cont .user-info .user-action .btn:focus{
+    border: none;
+    border: 4px solid var(--yellow-dark);
+}
+
+
+.profile-section .main-cont .layout .user-cont{
+    float: left;
+    left:0px;
+    min-width: 100%;
+    max-width:50%;
+    margin:12px auto;
+    /* position: absolute; */
+    /* top:0px; */
+    /* left: 26%; */
+    height:100vh;
+    grid-area: main-cont;
+}
+
+.profile-section .main-cont .layout .user-cont .main-tab-cont{
+    padding:0px;
+}
+.profile-section .main-cont .layout .user-cont .main-tab-cont .tab-button{
+    display: flex;
+    align-items: start;
+    justify-content:start;
+    background: var(--dark-bg);
+    border-radius: 5px;
+}
+.profile-section .main-cont .layout .user-cont .main-tab-cont .tab-button .btn{
+    color:#ccc;
+    border-radius: 30px;
+    margin:10px;
+    font-size: 12px;
+}
+
+.profile-section .main-cont .layout .user-cont .main-tab-cont .tab-button .btn.active{
+    background: var(--yellow-light);
+    color:#000;
+    
+}
+
+
+
+
+@media(min-width: 300px){
+    .profile-section .main-cont .layout .user-cont{
+        width:50%;
+    }
+
+}
+
+
+@media(min-width: 768px){
+
+
+}
+
+@media(min-width: 992px){
+
+}

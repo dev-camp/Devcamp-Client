@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Meta og tags -->
+    <meta name="description" content="The Description"> <!-- ˜150 chars -->
+    <meta property="og:title" content="Devcamp Signup">
+    <meta property="og:description" content="Connecting developers around the world"> <!-- ˜300 chars -->
+    <meta property="og:site_name" content="Devcamp">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="./assets/images/logo/tab.jpeg">
+    <!-- link rel -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <!-- tab icon -->
+    <link rel="shortcut icon" href="./assets/images/logo/tab.jpeg" type="image/x-icon">
+
+    <!-- AOS LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+    <!-- navbar -->
+    <nav class="nav">
+        <div class="container-fluid">
+            <div class="logo-cont">
+                <a href="/" class="navbar-brand">
+                    <img src="./assets/images/logo/logo.png" alt="" class="logo img-fluid">
+                </a>
+            </div>
+
+            <!-- User image -->
+            <div class="user-nav-cont">
+                <div class="img-cont">
+                    <img src="./assets/images/avatars/a.png" alt="" class="img img-fluid">
+                </div>
+
+                <div class="user-nav">
+                    <ul class="list">
+                        <h4 class="p-3">John Doe</h4>
+                        <hr>
+                        <li>
+                            <a href="/">View my space &#8594;</a></li>
+                        <li><a href="/">
+                            <span class="icon">
+                                <ion-icon name="bar-chart-outline"></ion-icon>
+                            </span>
+                            Dashboard
+                        </a></li>
+                        <li><a href="/">
+                            <span class="icon">
+                                <ion-icon name="cog-outline"></ion-icon>
+                            </span>
+                            Settings
+                        </a></li>
+                        <li><a href="/">
+                            <span class="icon">
+                                <ion-icon name="lock-open-outline"></ion-icon>
+                            </span>
+                            Logout
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header class="header">
+        <div class="ovl">
+            <div class="header-intro-txt">
+                <h1>Building a network for the smartest people</h1>
+            </div>
+        </div>
+    </header>
+    
+    <section class="profile-section">
+        <div class="main-cont">
+            <div class="layout">
+                <div class="user-card-cont">
+                    <span class="more">
+                        <ion-icon name="grid-outline" class="profile-card-more-btn"></ion-icon>
+                    </span>
+                    <div class="profile-more-cont">
+                        <button class="btn copy-link">Copy Link</button>
+                    </div>
+                    <div class="user-info">
+                        <img src="./assets/images/avatars/a.png" alt="" class="img">
+                        <br>
+                        <h3>John Doe</h3>
+                        <p>DEVOPS Engineer</p>
+                        <div class="location">
+                            <small>Canada</small>
+                        </div>
+                        <br>
+                        <div class="links">
+                            <a href="">
+                                <span class="icon">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="icon">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="icon">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </span>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="user-action">
+                            <button class="btn follow-btn">
+                                <span class="icon">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                </span>
+                                Follow
+                            </button>
+                            <button class="btn msg-btn">
+                                <span class="icon">
+                                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                                </span>
+                                Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user-cont">
+                    <div class="main-tab-cont">
+                        <div class="tab-button">
+                            <button class="btn about-btn active">
+                                About Me
+                            </button>
+    
+                            <button class="btn portfolio-btn">
+                                Portfolio
+                            </button>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="portfolio-cont">
+                        <div class="port-card">
+                            <div class="portfolio-info">
+                                <div class="clear-fix">
+                                    <div class="float-left">
+                                        <div class="post-cont d-flex">
+                                            <img src="./assets/images/avatars/a.png" alt="" class="img-fluid">
+                                            <p class="username">John Doe</p>
+                                            <small>July 14, 2020</small>
+                                        </div>
+                                    </div>
+                                    <div class="float-right">
+                                        <span class="more-icon">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-img">
+                                <img src="./assets/images/headers/bg.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+    </script>
+</body>
+</html>

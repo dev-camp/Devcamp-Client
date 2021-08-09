@@ -6,4 +6,7 @@
     --yellow-dark: #ff9f00;
     --yellow-light: #FED200;
     --dark:#000;
+    --transparent-bg: rgba(0,0,0,.6);
+    --transparent-md: rgba(0,0,0,.7);
+    --transparent-dark: rgba(0,0,0,.9);
 }
