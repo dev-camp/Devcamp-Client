@@ -329,7 +329,7 @@ body{
     background:var(--dark-bg);
     margin: 5px;
     box-shadow: 0px 0px 3px var(--dark-light);
-    border-radius: 8px;
+    border-radius: 15px;
     position: relative;
     box-shadow: 0px 0px 3px var(--dark-bg);
 }
@@ -476,7 +476,7 @@ body{
 
 /* Tablet potrate/landscape*/
 
-@media(min-width: 768px) and (max-width:992px){
+@media(min-width: 992px){
     .nav{
         height: 7vh;
     }
@@ -485,7 +485,10 @@ body{
         grid-template-areas: "user-card" "main-cont";
     }
     .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
-        width:350px;
+        width:450px !important;
+    }
+    .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card .portfolio-info .post-cont img{
+        width:50px;
     }
     .profile-section .main-cont .layout .user-card-cont .user-info img{
         width:150px;
@@ -524,23 +527,28 @@ body{
 }
 
 /* Tablet */
-@media(min-width: 992px){
-
+@media(min-width: 1200px){
     .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
-        width:350px;
+        width:400px !important;
     }
     .profile-section .main-cont .layout{
         display: grid;
         grid-template-columns:2fr 6fr;
         grid-template-areas: "user-card main-cont";
     }
-
+    .profile-section .main-cont .layout .user-card-cont{
+        height: 550px !important;
+    }
     .profile-section .main-cont .layout .user-card-cont .user-info{
         display: flex;
         align-items: center;
         justify-content: center;
         width:100%;
         padding: 12px;
+        text-align: center;
+    }
+    .profile-section .main-cont .layout .user-card-cont .user-info img{
+        width:100px;
     }
     .profile-section .main-cont .layout .user-card-cont .user-info .users-main-info{
         width: 100%;
@@ -549,28 +557,35 @@ body{
         justify-content: center;
         flex-direction: column;
     }
+    .profile-section .main-cont .layout .user-card-cont .user-info .users-main-info .user-name{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
 /* Ipad Pro */
 
-@media (min-width:1024px){
+@media (min-width:1400px){
+    body{
+        background: red;
+    }
     .nav{
-        height:6vh;
+        height:12vh;
     }
     .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
         width:450px;
     }
     .profile-section .main-cont .layout{
         display: grid;
-        grid-template-columns:1fr;
-        grid-template-areas: "user-card""main-cont";
+        grid-template-columns:2fr 6fr;
+        grid-template-areas: "user-card main-cont";
     }
     .profile-section .main-cont .layout .user-card-cont{
-        height:330px;
+        height:400px;
     }
     .profile-section .main-cont .layout .user-card-cont .user-info img{
-        width:150px;
+        width:50px;
     }
     .profile-section .main-cont .layout .user-card-cont{
         width:100%;
