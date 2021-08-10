@@ -157,6 +157,7 @@ body{
     .section .explore-cont .cards-cont .cards{
         width:100%;
         font-size: 12px;
+        background: red;
     }
 }
 .section .explore-cont .cards-cont .cards .img-cont{
