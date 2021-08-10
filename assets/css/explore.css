@@ -157,19 +157,15 @@ body{
 }
 .section .explore-cont .cards-cont .cards .users-info .user-bio{
     background: red;
+    width:100%;
 }
 
-@media(min-width:300px){
-    .section .explore-cont .cards-cont .cards{
-        width:100%;
-        font-size: 12px;
-    }
-}
+
 .section .explore-cont .cards-cont .cards .img-cont{
     width:200px;
 }
 .section .explore-cont .cards-cont .cards .img-cont img{
-    width: 50%;
+    width: 40%;
     border-radius: 50%;
     border: 3px solid var(--yellow-light);
 }
@@ -220,3 +216,15 @@ body{
     color:#ccc;
 }
 
+
+@media(min-width:300px){
+    .section .explore-cont .cards-cont .cards{
+        width:100%;
+        font-size: 12px;
+    }
+    .section .explore-cont .cards-cont .cards .users-info .u-name{
+        font-size: 15px;
+        font-weight: 600;
+        margin-right: 20px;
+    }
+}
