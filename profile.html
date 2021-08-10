@@ -89,12 +89,19 @@
                         <button class="btn copy-link">Copy Link</button>
                     </div>
                     <div class="user-info">
-                        <img src="./assets/images/avatars/a.png" alt="" class="img">
-                        <br>
-                        <h3>John Doe</h3>
-                        <p>DEVOPS Engineer</p>
-                        <div class="location">
-                            <small>Canada</small>
+                        <div class="users-main-info mt-5">
+                            <br>
+                            <div class="profile-img">
+                                <img src="./assets/images/avatars/a.png" alt="" class="img">
+                            </div>
+                            <div class="user-name">
+                                <h3>John Doe</h3>
+                                <p>DEVOPS Engineer</p>
+                                <small>Canada</small>
+                            </div>
+                            <br>
+                            <div class="location">
+                            </div>
                         </div>
                         <br>
                         <div class="links">
@@ -149,23 +156,82 @@
                     <div class="portfolio-cont">
                         <div class="port-card">
                             <div class="portfolio-info">
-                                <div class="clear-fix">
-                                    <div class="float-left">
-                                        <div class="post-cont d-flex">
-                                            <img src="./assets/images/avatars/a.png" alt="" class="img-fluid">
-                                            <p class="username">John Doe</p>
-                                            <small>July 14, 2020</small>
-                                        </div>
+                                <div class="left">
+                                    <div class="post-cont d-flex">
+                                        <img src="./assets/images/avatars/a.png" alt="" class="img-fluid">
+                                        <small class="username p-1">John Doe</small>
+                                        <small class="date p-1">July 14, 2020</small>
                                     </div>
-                                    <div class="float-right">
-                                        <span class="more-icon">
-                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                        </span>
+                                </div>
+                                <div class="right">
+                                    <ion-icon class="post-info" name="ellipsis-horizontal"></ion-icon>
+                                    <div class="post-info-cont">
+                                        <button class="btn copy-link" data-link="post-url">
+                                            Copy Link
+                                        </button>
+                                        <button class="btn copy-link" data-link="post-url">
+                                            Share Post
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="portfolio-img">
-                                <img src="./assets/images/headers/bg.jpg" alt="" class="img-fluid">
+                                <div class="img-cont">
+                                    <img src="./assets/images/headers/bg.jpg" alt="" class="img-fluid">
+                                    <div class="post-cont">
+                                        <p>TODO Application</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reaction-cont">
+                                <span class="like-cont reaction">
+                                    <ion-icon name="heart" class="deco"></ion-icon>
+                                        <span class="like-count p-1">120</span>
+                                </span>
+                                <span class="comment-cont reaction">
+                                    <ion-icon name="chatbubble-ellipses" class="deco"></ion-icon>
+                                    <span class="comment-count p-1">20</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="port-card">
+                            <div class="portfolio-info">
+                                <div class="left">
+                                    <div class="post-cont d-flex">
+                                        <img src="./assets/images/avatars/a.png" alt="" class="img-fluid">
+                                        <small class="username p-1">John Doe</small>
+                                        <small class="date p-1">July 14, 2020</small>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <ion-icon class="post-info" name="ellipsis-horizontal"></ion-icon>
+                                    <div class="post-info-cont">
+                                        <button class="btn copy-link" data-link="post-url">
+                                            Copy Link
+                                        </button>
+                                        <button class="btn copy-link" data-link="post-url">
+                                            Share Post
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-img">
+                                <div class="img-cont">
+                                    <img src="./assets/images/headers/bg.jpg" alt="" class="img-fluid">
+                                    <div class="post-cont">
+                                        <p>TODO Application</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reaction-cont">
+                                <span class="like-cont reaction">
+                                    <ion-icon name="heart" class="deco"></ion-icon>
+                                        <span class="like-count p-1">120</span>
+                                </span>
+                                <span class="comment-cont reaction">
+                                    <ion-icon name="chatbubble-ellipses" class="deco"></ion-icon>
+                                    <span class="comment-count p-1">20</span>
+                                </span>
                             </div>
                         </div>
                     </div>
