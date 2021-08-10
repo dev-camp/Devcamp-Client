@@ -1,6 +1,9 @@
 /* mobile */
 /* Small devices (landscape phones, 576px and up) */
 @media(min-width: 300px){
+    body{
+        overflow-x: hidden !important;
+    }
     /* navbar */
     .nav .logo-cont .logo{
         width:100px !important;
