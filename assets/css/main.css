@@ -276,7 +276,7 @@ body{
     width:100%;
 }
 .section .explore-cont .head .input-cont .search-inp{
-    width: 400px;
+    max-width: 400px;
     margin: 10px auto;
     padding: 12px;
     background: var(--dark-md);
