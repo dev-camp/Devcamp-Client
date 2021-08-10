@@ -42,7 +42,7 @@ body{
     background: var(--dark-md); 
 }
 .nav .logo-cont img{
-    width:100px;
+    width:90px;
 }
 .nav .user-nav-cont{
     position: absolute;
@@ -528,6 +528,9 @@ body{
 
 /* Tablet */
 @media(min-width: 1200px){
+    .nav{
+        height:10vh;
+    }
     .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
         width:400px !important;
     }
