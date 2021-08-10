@@ -161,11 +161,9 @@ body{
 }
 
 
-.section .explore-cont .cards-cont .cards .img-cont{
-    width:200px;
-}
+
 .section .explore-cont .cards-cont .cards .img-cont img{
-    width: 40%;
+    width: 100px;
     border-radius: 50%;
     border: 3px solid var(--yellow-light);
 }
@@ -226,5 +224,11 @@ body{
         font-size: 15px;
         font-weight: 600;
         margin-right: 20px;
+    }
+
+    .section .explore-cont .cards-cont .cards .img-cont img{
+        width: 100px;
+        border-radius: 50%;
+        border: 3px solid var(--yellow-light);
     }
 }
