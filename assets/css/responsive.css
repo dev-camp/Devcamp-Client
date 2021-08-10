@@ -89,6 +89,9 @@
 
 /* Medium devices (tablets, 768px and up)  */
 @media(min-width: 768px){
+    body{
+        overflow-x: hidden !important;
+    }
     .header{
         width:100% !important;
         height:100vh !important;
@@ -161,12 +164,15 @@
         width:400px !important;
     }
     .section .explore-cont .cont .head .input-cont .search-inp{
-        width: 450px !important;
+        width: 300px !important;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media(min-width: 992px){
+    body{
+        overflow-x: hidden !important;
+    }
     .header .ovl .content{
         display: flex !important;
         align-items: center !important;
