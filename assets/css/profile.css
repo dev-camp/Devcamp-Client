@@ -123,11 +123,29 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     color:#cccc;
     text-align: center;
 }
+.header .ovl .edit-cont{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 
-
+}
+.header .ovl .edit-cont .btn{
+    border-radius: 30px;
+    margin: 10px;
+}
+.header .ovl .edit-cont .profile-edit{
+    background: var(--yellow-light);
+}
+.header .ovl .edit-cont .profile-share{
+    background: var(--dark-light);
+    color: #ccc;
+}
 /* section */
 .profile-section{
     width:100%;
@@ -159,7 +177,7 @@ body{
     background: var(--dark-bg);
     position:relative;
     top:-50px;
-    height:450px;
+    max-height:400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,6 +191,7 @@ body{
     justify-content: center;
     flex-direction: column;
     padding:10px;
+    text-align: center;
     color:#ccc;
 }
 
@@ -228,6 +247,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .profile-section .main-cont .layout .user-card-cont .user-info .user-action .btn{
@@ -454,13 +474,22 @@ body{
 
 }
 
+/* Tablet potrate*/
 
-@media(min-width: 768px){
+@media(min-width: 768px) and (max-width:992px){
+    .nav{
+        height: 7vh;
+    }
     .profile-section .main-cont .layout{
-        grid-template-columns:1fr;
+        grid-template-columns:2fr;
         grid-template-areas: "user-card" "main-cont";
     }
-
+    .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
+        width:350px;
+    }
+    .profile-section .main-cont .layout .user-card-cont .user-info img{
+        width:150px;
+    }
     .profile-section .main-cont .layout .user-card-cont{
         width:100%;
     }
@@ -494,6 +523,7 @@ body{
 
 }
 
+/* Tablet */
 @media(min-width: 992px){
 
     .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
@@ -501,17 +531,22 @@ body{
     }
     .profile-section .main-cont .layout{
         display: grid;
-        grid-template-columns:1fr 3fr;
+        grid-template-columns:2fr 4fr;
         grid-template-areas: "user-card main-cont";
     }
 
     .profile-section .main-cont .layout .user-card-cont .user-info{
-        background: red;
         display: flex;
         align-items: center;
-        flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         width:100%;
         padding: 12px;
+    }
+    .profile-section .main-cont .layout .user-card-cont .user-info .users-main-info{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 }
