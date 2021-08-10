@@ -78,7 +78,7 @@ body{
 }
 
 .section .explore-cont .head{
-    width:70%;
+    width:100%;
     height:auto;
     position:relative;
     margin: 20px auto;
@@ -122,6 +122,7 @@ body{
 }
 .section .explore-cont .tags-cont .btn{
     margin:10px;
+    font-size: 12px;
 }
 .section .explore-cont .tags-cont .btn-tag{
     background: var(--dark-light);
