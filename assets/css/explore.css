@@ -152,11 +152,8 @@ body{
     box-shadow: 0px 0px 3px var(--dark-bg);
     color:#ccc;
 }
-.section .explore-cont .cards-cont .cards .users-info{
-    background: blue;
-}
+
 .section .explore-cont .cards-cont .cards .users-info .user-bio{
-    background: red;
     width:100%;
 }
 
