@@ -220,6 +220,9 @@ body{
         width:100%;
         font-size: 12px;
     }
+    .section .explore-cont .cards-cont .cards .users-info .user-bio{
+        margin-left: 12px;
+    }
     .section .explore-cont .cards-cont .cards .users-info .u-name{
         font-size: 15px;
         font-weight: 600;
