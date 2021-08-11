@@ -36,7 +36,7 @@
             <!-- User image -->
             <div class="user-nav-cont">
                 <div class="img-cont">
-                    <img src="./assets/images/avatars/a.png" alt="" class="img img-fluid">
+                    <img src="./assets/images/avatars/a.png" alt="" class="img user-nav-img img-fluid">
                 </div>
 
                 <div class="user-nav">
@@ -90,7 +90,7 @@
         <div class="main-cont">
             <div class="layout">
                 <div class="user-card-cont">
-                    <span class="more">
+                    <span class="more profile-card-menu">
                         <ion-icon name="grid-outline" class="profile-card-more-btn"></ion-icon>
                     </span>
                     <div class="profile-more-cont">
@@ -151,13 +151,16 @@
                                     </div>
                                 </div>
                                 <div class="right">
-                                    <ion-icon class="post-info" name="ellipsis-horizontal"></ion-icon>
+                                    <ion-icon class="post-info post-menu" name="ellipsis-horizontal"></ion-icon>
                                     <div class="post-info-cont">
                                         <button class="btn copy-link" data-link="post-url">
                                             Copy Link
                                         </button>
                                         <button class="btn copy-link" data-link="post-url">
                                             Share Post
+                                        </button>
+                                        <button class="btn delete-post" data-link="post-url">
+                                            Delete Post
                                         </button>
                                     </div>
                                 </div>
@@ -191,13 +194,16 @@
                                     </div>
                                 </div>
                                 <div class="right">
-                                    <ion-icon class="post-info" name="ellipsis-horizontal"></ion-icon>
+                                    <ion-icon class="post-info post-menu" name="ellipsis-horizontal"></ion-icon>
                                     <div class="post-info-cont">
                                         <button class="btn copy-link" data-link="post-url">
                                             Copy Link
                                         </button>
                                         <button class="btn copy-link" data-link="post-url">
                                             Share Post
+                                        </button>
+                                        <button class="btn delete-post" data-link="post-url">
+                                            Delete Post
                                         </button>
                                     </div>
                                 </div>
@@ -297,6 +303,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/ui_func.js"></script>
     <script>
         AOS.init({
             duration: 1200

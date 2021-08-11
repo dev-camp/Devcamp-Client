@@ -47,7 +47,7 @@ body{
 .nav .user-nav-cont{
     position: absolute;
     top:10px;
-    right:10px;
+    right:0px;
     width:120px;
 }
 .nav .user-nav-cont .img-cont{
@@ -66,7 +66,7 @@ body{
 
 .nav .user-nav-cont .user-nav{
     position: absolute;
-    right:0px;
+    right:10px;
     top:50px;
     padding:0px;
     background:var(--dark-light);
@@ -77,6 +77,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     color:#ccc;
+    z-index: 10;
     display: none;
 }
 .nav .user-nav-cont .user-nav .list{
@@ -104,7 +105,7 @@ body{
 /* header */
 .header{
     padding: 0px;
-    width:100vw;
+    width:100%;
     height:50vh;
     overflow: hidden;
     background-image: url("../images/headers/profile-bg.png");
@@ -569,6 +570,18 @@ body{
 
 
 @media(min-width: 300px){
+    .nav{
+        width:100%;
+    }
+    .nav .logo-cont img{
+        width:80px;
+    }
+    .nav .user-nav-cont .img-cont img{
+        width: 50%;
+        position: relative;
+        top:12px;
+        right:-10px;
+    }
     .profile-section .main-cont .layout{
         grid-template-columns:1fr;
         grid-template-areas: "user-card" "main-cont";
@@ -588,7 +601,14 @@ body{
 
 @media(min-width: 992px){
     .nav{
+        width: 100%;
         height: 7vh;
+    }
+    .nav .logo-cont img{
+        width:100px;
+    }
+    .nav .user-nav-cont .img-cont img{
+        width: 70%;
     }
     .profile-section .main-cont .layout{
         grid-template-columns:2fr;
@@ -639,7 +659,11 @@ body{
 /* Tablet */
 @media(min-width: 1200px){
     .nav{
-        height:10vh;
+        width: 100%;
+        height:12vh;
+    }
+    .nav .logo-cont img{
+        width:100px;
     }
     .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
         width:400px !important;
@@ -680,11 +704,11 @@ body{
 /* Ipad Pro */
 
 @media (min-width:1400px){
-    body{
-        background: red;
-    }
     .nav{
         height:12vh;
+    }
+    .nav .logo-cont img{
+        width:100px;
     }
     .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
         width:450px;
