@@ -158,7 +158,9 @@ body{
     body{
         overflow-x: hidden;
     }
-
+    .section .signup-cont{
+        width: 280px;
+    }
     .section .signup-cont .head{
         width:250px;
     }
