@@ -550,6 +550,10 @@ body{
         padding: 12px;
         text-align: center;
     }
+    .profile-section .main-cont .layout .gituser-cont .portfolio-cont .port-card .portfolio-info .left img{
+        width: 15%;
+        border-radius: 50%;
+    }
     .profile-section .main-cont .layout .user-card-cont .user-info img{
         width:100px;
     }
