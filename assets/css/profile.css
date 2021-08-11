@@ -539,6 +539,7 @@ body{
     color:var(--yellow-light);
     background: var(--dark-light);
     margin-right:12px;
+    margin-top:12px;
     border-radius: 30px;
 }
 .profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-links .link-card a:hover{
