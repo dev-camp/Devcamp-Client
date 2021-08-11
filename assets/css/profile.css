@@ -282,7 +282,7 @@ body{
     min-width: 100%;
     max-width:50%;
     margin:12px auto;
-    /* position: absolute; */
+    position: relative;
     /* top:0px; */
     /* left: 26%; */
     height:100vh;
@@ -319,8 +319,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: relative;
+    position: absolute;
     flex-wrap: wrap;
+    display: none;
 }
 
 .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
@@ -450,6 +451,110 @@ body{
 .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card .reaction-cont .reaction{
     display: flex;
 }
+/* User Bio container */
+
+.profile-section .main-cont .layout .user-cont .user-bio-cont{
+    width:100%;
+    height:auto;
+    position: relative;
+    left:0px;
+    padding: 0px;
+    margin:10px auto;
+}
+
+/* About Dev Container */
+.profile-section .main-cont .layout .user-cont .user-bio-cont .devcard{
+    background: var(--dark-bg);
+    padding: 15px;
+    border-radius: 10px;
+    color: #ccc;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .about-cont{
+    width: 100%;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .about-cont .dev-about{
+    padding-top:10px;
+    margin: 20px auto;
+    border-top: 2px solid #77777752;
+}
+
+/* Dev Intro */
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-intro{
+    width: 100%;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-intro .ufd{
+    padding: 0px;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-intro .ufd button{
+    display: flex;
+    padding: 5px;
+    color: #ccc;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-intro .ufd button small{
+    padding: 10px;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-intro .ufd button:hover{
+    font-size: 17px;
+    transition:.1s;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-intro .ufd ion-icon{
+    font-size: 20px;
+    padding: 10px;
+    color: var(--yellow-light);
+}
+
+/* Dev skill container */
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-skill{
+    padding: 25px;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-skill .skill-card{
+    padding-top: 10px;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-skill .skill-item{
+    padding:12px 25px;
+    margin-right:12px;
+    background: var(--dark-light);
+    font-size: 12px;
+    border-radius: 30px;
+}
+
+/* Dev links container */
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-links{
+    padding: 20px;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-links .link-card{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-links .link-card a{
+    padding: 12px 25px;
+    font-size: 12px;
+    color:var(--yellow-light);
+    background: var(--dark-light);
+    margin-right:12px;
+    border-radius: 30px;
+}
+.profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-links .link-card a:hover{
+    transform: scale(1.1);
+    transition: .1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -92,6 +92,8 @@ body{
 .section .explore-cont .form-cont{
     position: relative;
     top:50px;
+    width: 400px;
+    margin: 20px auto;
 }
 .section .explore-cont .form-cont form .form-control{
     background: var(--dark-light);
