@@ -319,7 +319,7 @@ body{
     height:auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: absolute;
     flex-wrap: wrap;
     display: none;
@@ -667,7 +667,7 @@ body{
         width:100px;
     }
     .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
-        width:400px !important;
+        width:300px !important;
     }
     .profile-section .main-cont .layout{
         display: grid;
