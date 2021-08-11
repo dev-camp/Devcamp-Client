@@ -157,6 +157,10 @@ body{
     body{
         overflow-x: hidden;
     }
+
+    .section .signup-cont .head{
+        width:250px;
+    }
 }
 
 
