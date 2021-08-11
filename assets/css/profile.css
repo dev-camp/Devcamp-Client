@@ -518,10 +518,11 @@ body{
 }
 .profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-skill .skill-item{
     padding:12px 25px;
-    margin-right:12px;
     background: var(--dark-light);
     font-size: 12px;
     border-radius: 30px;
+    margin-right:12px;
+    margin-top:12px;
 }
 
 /* Dev links container */
@@ -538,8 +539,8 @@ body{
     font-size: 12px;
     color:var(--yellow-light);
     background: var(--dark-light);
-    margin:12px;
-    padding-top:12px;
+    margin-right:12px;
+    margin-top:12px;
     border-radius: 30px;
 }
 .profile-section .main-cont .layout .user-cont .user-bio-cont .bio-card .dev-links .link-card a:hover{
