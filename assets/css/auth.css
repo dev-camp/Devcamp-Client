@@ -103,8 +103,6 @@ body{
     width:350px;
     margin:10px auto;
     padding:12px;
-    background: red;
-
 }
 .section .signup-cont .form-cont .inp-cont{
     display: flex;
@@ -113,8 +111,6 @@ body{
     flex-direction: column;
     padding:12px;
     width:100%;
-    background: blue;
-
 }
 .section .signup-cont .form-cont .inp{
     background: var(--dark-light);
@@ -162,6 +158,10 @@ body{
 
     .section .signup-cont .head{
         width:250px;
+    }
+
+    .section .signup-cont .form-cont{
+        width:280px;
     }
 }
 
