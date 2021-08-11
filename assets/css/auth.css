@@ -82,10 +82,13 @@ body{
     color: #ccc;
     margin: 0px auto;
     margin: 20px auto;
+    background: blue;
+
 }
 
 .section .signup-cont .head .oauth-cont{
     width: calc(600px/2);
+    background: red;
     display: flex;
     align-items: center;
     justify-content:space-between;
