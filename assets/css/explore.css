@@ -144,6 +144,7 @@ body{
 .section .explore-cont .cards-cont .cards{
     width:70%;
     display: flex;
+    justify-content: space-between;
     align-items: start;
     background: var(--dark-light);
     margin:20px auto;
@@ -230,5 +231,13 @@ body{
         width: 100px;
         border-radius: 50%;
         border: 3px solid var(--yellow-light);
+    }
+}
+
+
+@media (min-width:992px){
+    .section .explore-cont .cards-cont .cards{
+        width:45%;
+        
     }
 }
