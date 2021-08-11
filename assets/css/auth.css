@@ -113,6 +113,8 @@ body{
     flex-direction: column;
     padding:12px;
     width:100%;
+    background: blue;
+
 }
 .section .signup-cont .form-cont .inp{
     background: var(--dark-light);
