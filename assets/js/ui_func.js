@@ -26,10 +26,13 @@ addEventListener("load", ()=>{
     toggleProfileCardMenu()
     togglePostMenu()
     toggleUserNav()
+    portModalCommentMenu()
+    toggleModal()
+    openPortModal()
 })
 
 // Global variables
-
+let portModal = document.querySelector(".port-modal-cont");
 
 
 
@@ -114,6 +117,80 @@ function toggleUserNav(){
         else if(isVisible == true){
             userNav.style.display = "none"
             isVisible = false;
+        }
+    }
+}
+
+// Toggle portfolio modal
+function portModalToggle(){
+
+}
+
+// Portfoio modal comments menu
+function portModalCommentMenu(){
+    let portcommentmenu = document.querySelectorAll(".port-menu");
+    let isClicked = false;
+    if (portcommentmenu.length > 0) {
+        portcommentmenu.forEach((menu)=>{
+            menu.onclick = (e)=>{
+                let commentAction = e.target.parentElement.parentElement.querySelector(".comment-action");
+
+                if(isClicked == false){
+                    commentAction.style.display = "flex"
+                    isClicked = true;
+                }
+                else if(isClicked == true){
+                    commentAction.style.display = "none"
+                    isClicked = false;
+                }
+            }
+        })
+    } else {
+        portcommentmenu.onclick = (e)=>{
+            let commentAction = e.target.parentElement.parentElement.querySelector(".comment-action");
+
+            if(isClicked == false){
+                commentAction.style.display = "flex"
+                isClicked = true;
+            }
+            else if(isClicked == true){
+                commentAction.style.display = "none"
+                isClicked = false;
+            }
+        }
+    }
+}
+
+// Open portfolio modal
+function openPortModal(){
+    let portfolioImg = document.querySelectorAll(".portfolio-img");
+    log(portfolioImg)
+
+    if(portfolioImg.length > 1){
+        portfolioImg.forEach((img)=>{
+            img.onclick = ()=>{
+                portModal.style.display = "block"
+            }
+        })
+    }else{
+        portfolioImg.onclick = ()=>{
+            portModal.style.display = ""
+        } 
+    }
+}
+
+// Porfolio modal toggle
+function toggleModal(){
+    let cancelbtn = document.querySelector("[data-port-modal-cancel]")
+
+    cancelbtn.onclick = ()=>{
+        portModal.style.display = "none"
+    }
+
+    portModal.onclick = (e)=>{
+        
+        if(e.target.classList.contains("portfolio-container")){
+            portModal.style.display = "none"
         }
     }
 }

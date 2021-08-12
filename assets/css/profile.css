@@ -319,7 +319,7 @@ body{
     height:auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
     flex-wrap: wrap;
     display: none;
@@ -410,6 +410,7 @@ body{
 
 .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card .portfolio-img img{
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card .portfolio-img .post-cont{
@@ -771,7 +772,44 @@ body{
 }
 
 
+/* Floating menu style */
+.port-modal-cont .port-modal-box .floating-port-menu{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    
+}
 
+.port-modal-cont .port-modal-box .floating-port-menu .menu-cont{
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.port-modal-cont .port-modal-box .floating-port-menu .menu-cont button{
+    background: transparent;
+    margin: 10px;
+    border: none;
+    position: relative;
+    padding: 10px;
+}
+.port-modal-cont .port-modal-box .floating-port-menu .menu-cont ion-icon{
+    font-size: 25px;
+    color: #ccc;
+    padding: 12px;
+    background: var(--dark-md);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.port-modal-cont .port-modal-box .floating-port-menu .menu-cont ion-icon:hover{
+    transform: scale(.9);
+}
+.port-modal-cont .port-modal-box .floating-port-menu .menu-cont button:focus > ion-icon{
+    transform: scale(.9);
+    color: var(--yellow-light);
+}
 
 
 
@@ -779,6 +817,7 @@ body{
 @media(min-width: 300px){
     .nav{
         width:100%;
+        height: 10vh;
     }
     .nav .logo-cont img{
         width:80px;
@@ -811,6 +850,10 @@ body{
     }
     .port-modal-cont .port-modal-box .port-body .port-comment-cont .comments-block .right{
         right: -8px;
+    }
+
+    .port-modal-cont .port-modal-box .floating-port-menu .menu-cont ion-icon{
+        font-size: 15px;
     }
 
 }
@@ -873,14 +916,17 @@ body{
         max-width: 70%;
     }
     .port-modal-cont .port-modal-box .port-body .port-comment-cont .comments-block .left .user-info .main-comment{
-        max-width: 250px;
+        max-width: 400px;
     }
     .port-modal-cont .port-modal-box .port-body .port-comment-cont .comments-block .right{
         right: -8px;
     }
+    .port-modal-cont .port-modal-box .floating-port-menu .menu-cont ion-icon{
+        font-size: 25px;
+    }
 }
 
-/* Tablet */
+/* laptops */
 @media(min-width: 1200px){
     .nav{
         width: 100%;
@@ -925,18 +971,22 @@ body{
 
     /* Portfolio modal content */
     .port-modal-cont .port-modal-box{
-        width: 85% !important;
+        max-width: 60% !important;
+
     }
     .port-modal-cont .port-modal-box .port-body .port-comment-cont .comments-block .left .user-info .main-comment{
-        max-width: 250px;
+        max-width: 450px;
     }
     .port-modal-cont .port-modal-box .port-body .port-comment-cont .comments-block .right{
         right: -8px;
     }
+    .port-modal-cont .port-modal-box .floating-port-menu .menu-cont ion-icon{
+        font-size: 25px;
+    }
 }
 
 
-/* Ipad Pro */
+/* Large screen desktop */
 
 @media (min-width:1400px){
     .nav{
@@ -997,12 +1047,15 @@ body{
 
     /* Portfolio modal content */
     .port-modal-cont .port-modal-box{
-        width: 85% !important;
+        max-width: 75% !important;
     }
     .port-modal-cont .port-modal-box .port-body .port-comment-cont .comments-block .left .user-info .main-comment{
-        max-width: 250px;
+        max-width: 450px;
     }
     .port-modal-cont .port-modal-box .port-body .port-comment-cont .comments-block .right{
         right: -8px;
+    }
+    .port-modal-cont .port-modal-box .floating-port-menu .menu-cont ion-icon{
+        font-size: 25px;
     }
 }
