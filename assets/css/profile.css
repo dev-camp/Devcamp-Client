@@ -863,6 +863,10 @@ body{
         font-size: 15px;
     }
 
+    .port-modal-cont .port-modal-box .port-body .port-info .user-cont .post-details{
+        width: 150px;
+    }
+
 }
 
 /* Tablet potrate/landscape*/
