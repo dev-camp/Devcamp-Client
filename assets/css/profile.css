@@ -319,14 +319,14 @@ body{
     height:auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: absolute;
     flex-wrap: wrap;
     display: none;
 }
 
 .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
-    width:300px;
+    width:350px;
     height:auto;
     background:var(--dark-bg);
     margin: 5px;
@@ -349,8 +349,9 @@ body{
     height:auto;
 }
 
-.profile-section .main-cont .layout .user-cont .portfolio-cont .port-card .portfolio-info .left img{
-    width: 15%;
+.profile-section .main-cont .layout .user-cont .portfolio-cont .port-card .portfolio-info .left .img{
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
 }
 .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card .portfolio-info .right{
@@ -405,10 +406,12 @@ body{
 
 .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card .portfolio-img .img-cont{
     position: relative;
-    
+    width: 100%;
 }
 
-.profile-section .main-cont .layout .user-cont .portfolio-cont .port-card .portfolio-img img{
+.profile-section .main-cont .layout .user-cont .portfolio-cont .port-card .portfolio-img .img{
+    width: 100%;
+    height: 250px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -417,7 +420,7 @@ body{
     position: absolute;
     left:0px;
     width:100%;
-    background: var(--transparent-md);
+    background: var(--transparent-dark);
     bottom:0px;
     border-radius: 0px 0px 10px 10px;
     padding:10px;
@@ -630,15 +633,19 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.port-modal-cont .port-modal-box .port-body .port-info .user-cont img{
+.port-modal-cont .port-modal-box .port-body .port-info .user-cont .img{
     width: 35px;
-    margin: 12px;
+    height: 35px;
+    margin: 0px;
     border-radius: 50%;
 }
 .port-modal-cont .port-modal-box .port-body .port-info .user-cont .post-details{
     display: flex;
     align-items: center;
     padding:2px;
+    background: var(--dark-bg);
+    width:200px;
+    border-radius: 30px;
 }
 .port-modal-cont .port-modal-box .port-body .port-info .user-cont .btn{
     padding:8px 25px;
@@ -876,7 +883,7 @@ body{
         grid-template-areas: "user-card" "main-cont";
     }
     .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
-        width:300px !important;
+        width:350px !important;
     }
     .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card .portfolio-info .post-cont img{
         width:50px;
@@ -936,7 +943,7 @@ body{
         width:100px;
     }
     .profile-section .main-cont .layout .user-cont .portfolio-cont .port-card{
-        width:300px !important;
+        width:350px !important;
     }
     .profile-section .main-cont .layout{
         display: grid;
